@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>shot</title>
+<style>
+  html,body{margin:0;background:#111}
+  iframe{border:0;background:#fff;display:block}
+</style>
+<iframe id="f" width="390" height="2400"></iframe>
+<script>
+const params = new URLSearchParams(location.search);
+const src = params.get("src") || "/index.html";
+document.getElementById("f").src = src;
+</script>

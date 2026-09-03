@@ -1,0 +1,48 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>measuring</title>
+<iframe id="f" style="border:0;background:#fff"></iframe>
+<pre id="out">…</pre>
+<script>
+async function measure(src, w) {
+  const f = document.getElementById("f");
+  f.width = w;
+  f.height = 900;
+  f.src = src + "?t=" + Date.now();
+  await new Promise((r) => { f.onload = r; });
+  await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+  const doc = f.contentDocument;
+  const d = doc.documentElement;
+  const b = doc.body;
+  const nodes = [...doc.querySelectorAll("*")];
+  let maxRight = 0;
+  let offender = "";
+  const vw = d.clientWidth;
+  for (const el of nodes) {
+    const r = el.getBoundingClientRect();
+    const right = r.right + d.scrollLeft;
+    if (right > maxRight + 1) {
+      maxRight = right;
+      offender = el.className || el.tagName;
+    }
+  }
+  return {
+    src, w,
+    client: vw,
+    scroll: d.scrollWidth,
+    overflow: Math.max(0, d.scrollWidth - vw),
+    maxRight: Math.round(maxRight),
+    offender: String(offender).slice(0, 80)
+  };
+}
+(async () => {
+  const pages = ["/index.html", "/producto.html", "/ia.html", "/preguntas.html"];
+  const widths = [360, 390, 430, 768, 1440];
+  const results = [];
+  for (const w of widths) {
+    for (const p of pages) results.push(await measure(p, w));
+  }
+  document.getElementById("out").textContent = JSON.stringify(results, null, 2);
+  document.title = "done";
+})();
+</script>
