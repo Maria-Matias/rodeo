@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Carga asistida con IA y asistente de consulta integrado en Rodeo.">
+  <title>Con IA — Rodeo</title>
+  <meta name="theme-color" content="#173f30">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header-bar">
+    <div class="wrap header">
+      <a class="display logo" href="index.html">Rodeo<span>.</span></a>
+      <nav aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="producto.html">Producto</a>
+        <a href="ia.html" aria-current="page">Con IA</a>
+        <a href="preguntas.html">Preguntas</a>
+      </nav>
+      <a class="button primary" href="preguntas.html#contacto">Solicitar demo ↗</a>
+    </div>
+  </header>
+  <main>
+    <section class="section ai-section">
+      <div class="wrap ai-flow">
+        <div class="ai-copy">
+          <p class="eyebrow">Carga asistida con IA</p>
+          <h2 class="display">Del cuaderno<br>a Rodeo.</h2>
+          <p><strong>Sacale una foto. Rodeo prepara la carga.</strong></p>
+          <p>¿Anotaste pesos, boqueos o caravanas en el campo? Subí una foto y Rodeo identifica la información y prepara los eventos correspondientes.</p>
+          <div class="human-control"><span>✓</span><div>Vos revisás.<br>Vos confirmás.</div></div>
+          <p class="ai-note">La IA propone la carga. Ningún evento se registra en la ficha del animal hasta que una persona lo revisa y confirma.</p>
+        </div>
+        <div class="ai-demo" aria-label="Ejemplo del flujo de carga asistida desde un cuaderno">
+          <div class="notebook">
+            <span class="notebook-label">▣ CUADERNO DE CAMPO</span>
+            <p class="scribble">…6789 &nbsp; 342 kg · 4 dientes</p>
+            <p class="scribble">…3214 &nbsp; 355 kg · 6 dientes</p>
+            <p class="scribble">…8830 &nbsp; 338 kg · 4 dientes</p>
+            <p class="scribble notebook-date">Lote norte · 12/05</p>
+          </div>
+          <span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="ai-result">
+            <div class="ai-result-head"><b>Rodeo IA</b><span class="ai-chip">BORRADOR</span></div>
+            <p class="found">3 animales identificados</p>
+            <ul>
+              <li><span>✓</span>3 pesadas preparadas</li>
+              <li><span>✓</span>3 boqueos preparados</li>
+              <li><span>✓</span>Fecha y lote asociados</li>
+            </ul>
+            <div class="ai-actions"><span class="ai-button">Revisar eventos</span><span class="ai-button confirm">Confirmar</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section assistant-section">
+      <div class="wrap assistant-layout">
+        <div class="assistant-copy">
+          <p class="eyebrow">Asistente IA integrado</p>
+          <h2 class="display">Preguntale<br>a tu rodeo.</h2>
+          <p class="assistant-lead">Consultá los datos del establecimiento en lenguaje natural y obtené respuestas claras sin recorrer pantalla por pantalla.</p>
+          <ul class="assistant-points">
+            <li>Inventario, composición y calidad de datos</li>
+            <li>Animales, actividad y jornadas recientes</li>
+            <li>Posibles extravíos en modo simulación</li>
+            <li>Manual del sistema y bibliografía técnica</li>
+            <li>Conversaciones guardadas para retomarlas</li>
+          </ul>
+          <p class="assistant-note"><strong>Controlado por diseño:</strong> utiliza herramientas cerradas de solo lectura. No crea, modifica, confirma, anula ni elimina información.</p>
+        </div>
+        <div class="assistant-chat" aria-label="Ejemplo de conversación con el Asistente IA">
+          <div class="assistant-chat-head">
+            <div><b>Asistente IA</b><small>Consulta de datos</small></div>
+            <span>● SOLO LECTURA</span>
+          </div>
+          <div class="assistant-message user">¿Cómo está compuesto el rodeo y qué tendría que revisar?</div>
+          <div class="assistant-message bot">Tenés 486 animales activos. La composición está disponible por sexo, categoría y establecimiento. Para mejorar la calidad de los indicadores, revisá las fichas sin ubicación y los animales que todavía no tienen dos pesadas.</div>
+          <div class="assistant-source">Consultó: resumen del rodeo · manual de usuario</div>
+          <div class="assistant-suggestions">
+            <span>¿Hay posibles extravíos?</span>
+            <span>¿Cómo funciona la conversión?</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer"><span class="display logo">Rodeo<span>.</span></span><span>Gestión ganadera clara, donde estés.</span><span>Uruguay</span></div></footer>
+</body>
+</html>
