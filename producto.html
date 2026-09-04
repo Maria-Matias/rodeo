@@ -30,38 +30,53 @@
     </div>
   </header>
   <main>
-    <section class="wrap section">
+    <section class="wrap product-overview" aria-labelledby="product-title">
+      <div class="product-overview-copy">
+        <p class="eyebrow">El producto</p>
+        <h1 id="product-title" class="display">La gestión de tu rodeo,<br>en un solo lugar.</h1>
+        <p>Rodeo reúne la ficha de cada animal, su historial, las jornadas de manga y los indicadores productivos para que el dato registrado en el campo termine convertido en una decisión.</p>
+      </div>
+      <ul class="product-pillars" aria-label="Áreas principales de Rodeo">
+        <li><span>01</span> Animales</li>
+        <li><span>02</span> Eventos</li>
+        <li><span>03</span> Jornadas</li>
+        <li><span>04</span> Indicadores</li>
+      </ul>
+    </section>
+
+    <section class="wrap section journey-section">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Una jornada, de principio a fin</p>
-          <h2 class="display">180 animales.<br>Una mañana de trabajo.</h2>
+          <p class="eyebrow">Así funciona en el campo</p>
+          <h2 class="display">Una jornada real,<br>de principio a fin.</h2>
         </div>
-        <p>Un ejemplo concreto de cómo Rodeo ordena la operativa sin agregar pasos al trabajo de manga.</p>
+        <p>180 vaquillonas durante una mañana de trabajo. Rodeo ordena la operativa sin agregar pasos a la manga.</p>
       </div>
       <div class="journey-demo">
         <div class="journey-intro">
           <div>
-            <span class="mini-label">EJEMPLO DE JORNADA</span>
+            <span class="mini-label">MANGA DE OTOÑO</span>
             <p class="big">180</p>
-            <h3 class="display journey-lot-title">Vaquillonas</h3>
-            <p>Objetivo: pesada general, tratamiento sanitario común y revisión de excepciones.</p>
+            <h3 class="display journey-lot-title">vaquillonas</h3>
+            <p>Pesada general, sanidad común y revisión de excepciones.</p>
           </div>
           <small>Establecimiento El Ombú · Potrero Norte</small>
         </div>
         <div class="journey-board">
           <div class="journey-board-head">
             <div><small class="journey-status-label">JORNADA EN CURSO</small><h3 class="display journey-title">Manga de otoño</h3></div>
-            <span class="live">SIN CONEXIÓN</span>
+            <span class="live">MODO SIN CONEXIÓN</span>
           </div>
           <div class="journey-progress"><span></span></div>
-          <small>130 de 180 animales procesados · 72%</small>
+          <p class="journey-progress-copy"><strong>130 de 180 procesadas</strong><span>72% de la jornada completada</span></p>
           <div class="journey-rows">
-            <div class="journey-row"><span class="icon">01</span><div><b>Lectura o carga de caravana</b><small>Identificación de cada animal</small></div><span class="count">130</span></div>
-            <div class="journey-row"><span class="icon">02</span><div><b>Pesada individual</b><small>Promedio registrado: 327 kg</small></div><span class="count">130</span></div>
-            <div class="journey-row"><span class="icon">03</span><div><b>Sanidad común</b><small>Tratamiento aplicado al lote</small></div><span class="count">124</span></div>
-            <div class="journey-row"><span class="icon">04</span><div><b>Excepciones individuales</b><small>Animales separados para revisar</small></div><span class="count count-warning">6</span></div>
-            <div class="journey-row"><span class="icon">…</span><div><b>Pendientes por procesar</b><small>Continúan al retomar la jornada</small></div><span class="count">50</span></div>
+            <div class="journey-row"><span class="icon">✓</span><div><b>Caravanas identificadas</b><small>Lectura o carga de cada animal</small></div><span class="count">130</span></div>
+            <div class="journey-row"><span class="icon">✓</span><div><b>Pesadas registradas</b><small>Promedio del lote: 327 kg</small></div><span class="count">130</span></div>
+            <div class="journey-row"><span class="icon">✓</span><div><b>Sanidad común aplicada</b><small>Tratamiento registrado para el lote</small></div><span class="count">124</span></div>
+            <div class="journey-row"><span class="icon warning-icon">!</span><div><b>Excepciones para revisar</b><small>Separadas del tratamiento común</small></div><span class="count count-warning">6</span></div>
+            <div class="journey-row"><span class="icon pending-icon">○</span><div><b>Pendientes</b><small>Continúan al retomar la jornada</small></div><span class="count">50</span></div>
           </div>
+          <p class="offline-explainer">Los registros quedan guardados en el dispositivo y se sincronizan al recuperar señal.</p>
         </div>
       </div>
     </section>
