@@ -40,7 +40,7 @@ nav a[aria-current="page"]{color:var(--orange);border-bottom:2px solid var(--ora
 .section{padding:4.5rem 0}.section h2{margin:.8rem 0 2rem;font-size:clamp(2.2rem,4.5vw,3.2rem);line-height:1.07}
 .hero{padding:4.5rem 0}.journey-intro{min-height:28rem}.journey-intro .big{margin:2rem 0 0}
 .product-overview{display:grid;grid-template-columns:1.25fr .75fr;align-items:end;gap:clamp(2rem,7vw,7rem);padding:clamp(2.5rem,5vw,4.25rem) 0 clamp(3.5rem,7vw,6rem);border-bottom:1px solid var(--line)}
-.product-overview-copy h1{max-width:52rem;margin:.8rem 0 1.5rem;font-size:clamp(3rem,6vw,5.6rem);line-height:.94;letter-spacing:-.045em}
+.product-overview-copy h1{max-width:52rem;margin:.8rem 0 1.5rem;font-size:clamp(2.2rem,4.5vw,3.2rem);line-height:1.07;letter-spacing:-.03em}
 .product-overview-copy>p:last-child{max-width:42rem;margin:0;color:var(--muted);font-size:1.08rem;line-height:1.75}
 .product-pillars{margin:0;padding:0;border-top:1px solid var(--line);list-style:none}
 .product-pillars li{display:flex;align-items:center;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line);font-family:"Fraunces",serif;font-size:1.2rem}
@@ -57,7 +57,7 @@ nav a[aria-current="page"]{color:var(--orange);border-bottom:2px solid var(--ora
 @media(max-width:820px){
   .product-overview{grid-template-columns:1fr;padding:2.25rem 0 3.5rem}
   .product-pillars{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;border-top:0}
-  .product-pillars li{min-width:0;display:grid;align-content:space-between;gap:1.25rem;min-height:7.5rem;padding:1rem;border:1px solid var(--line);border-radius:.8rem;background:#fbfaf6;font-size:1rem}
+  .product-pillars li{min-width:0;display:grid;align-content:start;gap:.45rem;min-height:5.4rem;padding:.8rem .85rem;border:1px solid var(--line);border-radius:.8rem;background:#fbfaf6;font-size:.95rem}
   .product-pillars span{display:block}
 }
 
@@ -112,7 +112,7 @@ html,body{overflow-x:clip}
   nav{font-size:.72rem;gap:.3rem}
   .header .button{font-size:.78rem;padding:.5rem .8rem;min-height:2.4rem}
   .product-overview{padding:2rem 0 3rem}.product-overview-copy h1{font-size:clamp(1.85rem,8.5vw,2.6rem);line-height:1.08;letter-spacing:-.03em}
-  .product-pillars{grid-template-columns:1fr 1fr}.product-pillars li{align-content:start;gap:.45rem;min-height:5.6rem}
+  .product-pillars{grid-template-columns:1fr 1fr}.product-pillars li{align-content:start;gap:.35rem;min-height:5rem;padding:.75rem}
   .journey-progress-copy{display:block}.journey-progress-copy span{display:block;margin-top:.2rem}
   .trust{grid-template-columns:1fr}
   .trust>div{border-right:0}
